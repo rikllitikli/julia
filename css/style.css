@@ -556,3 +556,52 @@ body{
         opacity: 100;
     }
 }
+
+.pchely{
+    overflow: hidden;
+}
+
+
+.pchely_one img{
+    position: absolute;
+    top: 400px;
+    left: -30px;
+    width: 30px;
+    animation-name: pchely_one;
+    animation-duration: 6s;
+    animation-delay: 12s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pchely_one {
+    0%{
+        top: 400px;
+        left: -30px;
+    }
+
+    100%{
+        top: 400px;
+        left: 92%;
+    }
+}
+.pchely_two img{
+    position: absolute;
+    top: 200px;
+    left: -30px;
+    width: 30px;
+    animation-name: pchely_two;
+    animation-duration: 6s;
+    animation-delay: 16s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pchely_two {
+    0%{
+        top: 200px;
+        left: -30px;
+    }
+    100%{
+        top: 200px;
+        left: 94%;
+    }
+}
