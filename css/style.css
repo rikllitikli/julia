@@ -5,7 +5,7 @@
 
 body{
     position: relative;
-    overflow: hidden;
+
     background: black;
     box-shadow: 0 -400px 300px -300px orangered inset;
     animation: sky-change;
@@ -287,6 +287,9 @@ body{
     right: 266px;
     overflow: hidden;
 }
+.trava{
+    overflow: hidden;
+}
 .trava_one{
     position: absolute;
     right: 0;
@@ -294,8 +297,9 @@ body{
 }
 .trava_two{
     position: absolute;
-    bottom: 20px;
-    transform: scale(-1, 1)
+    bottom: 0;
+    transform: scale(-1, 1);
+    z-index: 100;
 }
 .trava_three{
     position: absolute;
@@ -304,17 +308,46 @@ body{
 }
 .trava_foure{
     position: absolute;
-    bottom: -20px;
+    bottom: 0;
     right: 0;
 }
-
+.trava_foure img{
+    position: relative;
+  top: 5px;
+}
 .kor_one img{
     position: absolute;
-    bottom: -15px;
+    bottom: 50px;
     right: 0;
 }
 
 .kor_two img{
     position: absolute;
-    bottom: -15px;
+    bottom: 0px;
 }
+.kor_two{
+    overflow: hidden;
+}
+.body{
+    overflow: hidden;
+}
+
+.kor_one{
+    overflow: hidden;
+}
+.trava_one{
+    overflow: hidden;
+}
+.trava_foure{
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+}
+
+.trava_three{
+    overflow: hidden;
+}
+.trava_two{
+    overflow: hidden;
+}
+
