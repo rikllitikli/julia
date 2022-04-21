@@ -1,0 +1,319 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    position: relative;
+    overflow: hidden;
+    background: black;
+    box-shadow: 0 -400px 300px -300px orangered inset;
+    animation: sky-change;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+@keyframes sky-change {
+    0% {
+        background: black;
+    }
+    50% {
+        background: skyblue;
+        box-shadow: 0 -400px 300px -300px steelblue inset;
+    }
+
+    100%{
+        background: steelblue;
+        box-shadow: 0 -400px 300px -300px steelblue inset;
+    }
+}
+
+.bg{
+    position: absolute;
+    left: 49%;
+    top: 240px;
+    animation-name: ci_white;
+    opacity: 0;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes ci_white {
+    0%{
+        opacity: 0;
+        top: 240px;
+        background: none;
+       left: 49%;
+    }
+        50%{
+            opacity: 100;
+            top: 240px;
+            left: 49%;
+        }
+    100%{
+        opacity: 100;
+        top: 40px;
+       left: 55%;
+    }
+}
+@media (max-width: 540px) {
+    .bg{
+        opacity: 0;
+        top: 240px;
+        background: none;
+        left: 46%;
+    }
+    @keyframes ci_white {
+        0%{
+            opacity: 0;
+            top: 240px;
+            background: none;
+            left: 46%;
+        }
+        50%{
+            opacity: 100;
+            top: 240px;
+            left: 46%;
+        }
+        100%{
+            opacity: 100;
+            top: 40px;
+            left: 55%;
+        }
+    }
+}
+.one{
+    animation-name:ci_white2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    width: 70px;
+    height: 70px;
+    background-color: yellow;
+    border-radius: 50%;
+}
+
+@keyframes ci_white2 {
+    0%{
+        -webkit-box-shadow: 0px 0px 20px -2px rgba(0, 144, 255, 1);
+        -moz-box-shadow: 0px 0px 20px -2px rgba(0, 144, 255, 1);
+        box-shadow: 0px 0px 20px -2px rgba(0, 144, 255, 1);
+    }
+
+    50%{
+        -webkit-box-shadow: 0px 0px 14px 13px rgba(0, 144, 255, 1);
+        -moz-box-shadow: 0px 0px 14px 13px rgba(0, 144, 255, 1);
+        box-shadow: 0px 0px 14px 13px rgba(0, 144, 255, 1);
+    }
+    100%{
+        -webkit-box-shadow: 0px 0px 20px -2px rgba(0, 144, 255, 1);
+        -moz-box-shadow: 0px 0px 20px -2px rgb(0, 144, 255);
+        box-shadow: 0px 0px 20px -2px rgba(0, 144, 255, 1);
+    }
+}
+.j{
+    position: relative;
+    top: 240px;
+    width: 100%;
+    animation-name: Juli;
+    animation-duration: 1ms;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+.j img{
+  position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@keyframes Juli {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100;
+    }
+}
+
+.k{
+   position: relative;
+}
+.k img{
+    position: absolute;
+    width: 120px;
+    top: 590px;
+    left: 80%;
+    animation-name: k_juli;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes k_juli {
+    0%{
+        top: 590px;
+        left: 80%;
+    }
+    50%{
+        top: 304px;
+        left: 48%;
+    }
+    100%{
+        top: 304px;
+        left: 48%;
+        opacity: 0;
+    }
+}
+
+@media (max-width: 540px) {
+    @keyframes k_juli {
+        0%{
+            top: 590px;
+            left: 80%;
+        }
+        50%{
+            top: 304px;
+            left: 41%;
+        }
+        100%{
+            top: 304px;
+            left: 41%;
+            opacity: 0;
+        }
+    }
+
+}
+
+.k_two{
+    position: relative;
+}
+.k_two img{
+    position: absolute;
+    top: 320px;
+    left: 49%;
+    animation-name: k_two;
+    animation-duration: 2s;
+    animation-delay: 4.1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes k_two {
+    0%{
+        opacity: 0;
+        top: 320px;
+        left: 49%;
+    }
+    50%{
+        opacity: 100;
+        top: 375px;
+    }
+    100%{
+        opacity: 100;
+        top: 375px;
+        left: 50%;
+    }
+}
+@media (max-width: 540px) {
+        .k_two img{
+            top: 308px;
+            left: 46%;
+            animation-name: k_two;
+        }
+
+    @keyframes k_two {
+        0%{
+            top: 308px;
+            left: 46%;
+        }
+        50%{
+            top: 375px;
+        }
+        100%{
+            opacity: 100;
+            top: 375px;
+            left: 50%;
+        }
+    }
+}
+
+
+.text{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.text h1{
+    position: absolute;
+    font-family: Roboto;
+    top: 150px;
+    font-size: 70px;
+}
+
+.one_t{
+    color: sienna;
+    -webkit-text-stroke: 2px sienna;
+}
+.two_t{
+    color: darkorange;
+    animation: animate 4s ease-in-out infinite alternate;
+}
+
+@keyframes animate {
+    0%, 100%{
+        clip-path: polygon(0% 46%, 21% 63%, 41% 57%, 62% 42%, 79% 45%, 92% 53%, 100% 69%, 100% 100%, 1% 100%);
+    }
+    50%{
+        clip-path: polygon(0% 46%, 21% 39%, 39% 42%, 63% 54%, 74% 59%, 85% 59%, 100% 48%, 100% 100%, 1% 100%);
+    }
+}
+
+@media (max-width: 540px) {
+    .text h1{
+        font-size: 35px;
+    }
+}
+.bg_fon{
+    position: relative;
+    top: 169px;
+    right: 266px;
+}
+.trava_one{
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+}
+.trava_two{
+    position: absolute;
+    bottom: 20px;
+    transform: scale(-1, 1)
+}
+.trava_three{
+    position: absolute;
+    bottom: 0;
+    transform: scale(-1, 1)
+}
+.trava_foure{
+    position: absolute;
+    bottom: -20px;
+    right: 0;
+}
+
+.kor_one img{
+    position: absolute;
+    bottom: -15px;
+    right: 0;
+}
+
+.kor_two img{
+    position: absolute;
+    bottom: -15px;
+}
