@@ -248,6 +248,22 @@ body{
     position: relative;
     display: flex;
     justify-content: center;
+    opacity: 0;
+    animation-name: text_tt;
+    animation-duration: 6s;
+    animation-delay: 1s;
+}
+
+@keyframes text_tt {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 100;
+    }
+    100%{
+        opacity: 0;
+    }
 }
 
 .text h1{
@@ -286,6 +302,101 @@ body{
     right: 266px;
 
 }
+
+
+.text_two{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    animation-name: text_two;
+    animation-duration: 6s;
+    animation-delay: 7s;
+}
+
+@keyframes text_two {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 100;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.text_two h1{
+    position: absolute;
+    font-family: Roboto;
+    top: 150px;
+    font-size: 24px;
+}
+
+.text_two .one_t{
+    color: sienna;
+    -webkit-text-stroke: 2px sienna;
+}
+.text_two .two_t{
+    color: darkorange;
+    animation: animate_two 4s ease-in-out infinite alternate;
+}
+
+@keyframes animate_two {
+    0%, 100%{
+        clip-path: polygon(0% 46%, 21% 63%, 41% 57%, 62% 42%, 79% 45%, 92% 53%, 100% 69%, 100% 100%, 1% 100%);
+    }
+    50%{
+        clip-path: polygon(0% 46%, 21% 39%, 39% 42%, 63% 54%, 74% 59%, 85% 59%, 100% 48%, 100% 100%, 1% 100%);
+    }
+}
+
+
+.text_three{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    animation-name: text_three;
+    animation-duration: 3s;
+    animation-delay: 14s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes text_three {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100;
+    }
+}
+
+.text_three h1{
+    position: absolute;
+    font-family: Roboto;
+    top: 150px;
+    font-size: 24px;
+}
+
+.text_three .one_t{
+    color: sienna;
+    -webkit-text-stroke: 2px sienna;
+}
+.text_three .two_t{
+    color: darkorange;
+    animation: animate_three 4s ease-in-out infinite alternate;
+}
+
+@keyframes animate_three {
+    0%, 100%{
+        clip-path: polygon(0% 46%, 21% 63%, 41% 57%, 62% 42%, 79% 45%, 92% 53%, 100% 69%, 100% 100%, 1% 100%);
+    }
+    50%{
+        clip-path: polygon(0% 46%, 21% 39%, 39% 42%, 63% 54%, 74% 59%, 85% 59%, 100% 48%, 100% 100%, 1% 100%);
+    }
+}
+
 
 .trava_one{
     position: absolute;
