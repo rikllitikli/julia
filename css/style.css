@@ -317,10 +317,13 @@ body{
 }
 .kor_one img{
     position: absolute;
-    bottom: 50px;
-    right: 0;
+    bottom: 0;
 }
-
+@media (max-width: 540px) {
+    .kor_one img{
+        right: 0;
+    }
+}
 .kor_two img{
     position: absolute;
     bottom: 0px;
