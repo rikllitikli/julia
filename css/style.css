@@ -7,7 +7,6 @@ body{
     position: relative;
 
     background: black;
-    box-shadow: 0 -400px 300px -300px orangered inset;
     animation: sky-change;
     animation-duration: 4s;
     animation-fill-mode: forwards;
@@ -337,3 +336,19 @@ body{
     bottom: 0;
 }
 
+.trava{
+    opacity: 0;
+    animation-name: trava;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes trava {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100;
+    }
+}
