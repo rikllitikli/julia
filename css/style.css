@@ -154,7 +154,41 @@ body{
     animation-delay: 3s;
     animation-fill-mode: forwards;
 }
+.derevo{
+    overflow: hidden;
+}
+.derevo img{
+    position: absolute;
+    left: -200px;
+    bottom: 0;
+}
+.derevo_two{
+    overflow: hidden!important;
 
+}
+
+.derevo_two img{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+
+.derevo, .derevo_two{
+    opacity: 0;
+    animation-name: derevo;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes derevo {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100;
+    }
+}
 @keyframes k_juli {
     0%{
         top: 590px;
