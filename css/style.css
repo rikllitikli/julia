@@ -151,7 +151,7 @@ body{
     left: 80%;
     animation-name: k_juli;
     animation-duration: 2s;
-    animation-delay: 3s;
+    animation-delay: 8s;
     animation-fill-mode: forwards;
 }
 .derevo{
@@ -167,13 +167,72 @@ body{
 
 }
 
+.oblaka{
+    opacity: 0;
+    animation-name: oblako;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes oblako{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100;
+    }
+}
+
 .derevo_two img{
     position: absolute;
     right: 0;
     bottom: 0;
     overflow: hidden;
 }
-
+.ob_one img{
+    position: absolute;
+    top: 86px;
+    left: 98px;
+    width: 80px;
+    animation-name: oblako_one;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    Animation-direction:alternate;
+}
+@keyframes oblako_one {
+    0%{
+        top: 86px;
+        left: 98px;
+        width: 80px;
+    }
+    100%{
+        top: 86px;
+        left: 80px;
+        width: 70px;
+    }
+}
+.ob_two img{
+    position: absolute;
+    width: 100px;
+    top: 15px;
+    left: 24px;
+    animation-name: oblako_two;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    Animation-direction:alternate;
+}
+@keyframes oblako_two {
+    0%{
+        top: 15px;
+        left: 24px;
+    }
+    100%{
+        top: 15px;
+        left: 32px;
+    }
+}
 .derevo, .derevo_two{
     opacity: 0;
     animation-name: derevo;
@@ -233,7 +292,7 @@ body{
     left: 49%;
     animation-name: k_two;
     animation-duration: 2s;
-    animation-delay: 4.1s;
+    animation-delay: 9s;
     animation-fill-mode: forwards;
     opacity: 0;
 }
