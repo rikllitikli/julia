@@ -285,6 +285,7 @@ body{
     position: relative;
     top: 169px;
     right: 266px;
+    overflow: hidden;
 }
 .trava_one{
     position: absolute;
