@@ -10,7 +10,7 @@ body{
     animation: sky-change;
     animation-duration: 4s;
     animation-fill-mode: forwards;
-    animation-delay: 2s;
+    animation-delay: 6s;
 }
 @keyframes sky-change {
     0% {
@@ -37,7 +37,7 @@ body{
     animation-timing-function: ease;
     animation-iteration-count: 1;
     animation-direction: alternate;
-    animation-delay: 1s;
+    animation-delay: 5.7s;
     animation-fill-mode: forwards;
 }
 @keyframes ci_white {
@@ -88,7 +88,8 @@ body{
     animation-name:ci_white2;
     animation-duration: 2s;
     animation-iteration-count: infinite;
-    animation-delay: 1s;
+    animation-delay: 2s;
+    opacity: 0;
     width: 70px;
     height: 70px;
     background-color: yellow;
@@ -97,17 +98,20 @@ body{
 
 @keyframes ci_white2 {
     0%{
+        opacity: 0;
         -webkit-box-shadow: 0px 0px 33px 3px rgba(255, 247, 0, 0.54);
         -moz-box-shadow: 0px 0px 33px 3px rgba(255, 247, 0, 0.54);
         box-shadow: 0px 0px 33px 3px rgba(255, 247, 0, 0.54);
     }
 
     50%{
+        opacity: 100;
         -webkit-box-shadow: 0px 0px 33px 14px rgba(255, 247, 0, 0.73);
         -moz-box-shadow: 0px 0px 33px 14px rgba(255, 247, 0, 0.73);
         box-shadow: 0px 0px 33px 14px rgba(255, 247, 0, 0.73);
     }
     100%{
+        opacity: 100;
         -webkit-box-shadow: 0px 0px 33px 3px rgba(255, 247, 0, 0.54);
         -moz-box-shadow: 0px 0px 33px 3px rgba(255, 247, 0, 0.54);
         box-shadow: 0px 0px 33px 3px rgba(255, 247, 0, 0.54);
@@ -118,8 +122,9 @@ body{
     top: 240px;
     width: 100%;
     animation-name: Juli;
-    animation-duration: 1ms;
+    animation-duration: 1s;
     opacity: 0;
+    animation-delay: 1s;
     animation-fill-mode: forwards;
 }
 .j img{
@@ -130,6 +135,7 @@ body{
     bottom: 0;
     margin-right: auto;
     margin-left: auto;
+
 }
 
 @keyframes Juli {
@@ -171,7 +177,7 @@ body{
     opacity: 0;
     animation-name: oblako;
     animation-duration: 2s;
-    animation-delay: 2s;
+    animation-delay: 7s;
     animation-fill-mode: forwards;
 
 }
@@ -237,7 +243,7 @@ body{
     opacity: 0;
     animation-name: derevo;
     animation-duration: 2s;
-    animation-delay: 2s;
+    animation-delay: 5.9s;
     animation-fill-mode: forwards;
 }
 @keyframes derevo {
@@ -544,7 +550,7 @@ body{
     opacity: 0;
     animation-name: trava;
     animation-duration: 2s;
-    animation-delay: 2s;
+    animation-delay: 6s;
     animation-fill-mode: forwards;
 }
 
@@ -581,7 +587,7 @@ body{
 
     100%{
         top: 400px;
-        left: 92%;
+        left: 91%;
     }
 }
 .pchely_two img{
@@ -602,6 +608,6 @@ body{
     }
     100%{
         top: 200px;
-        left: 94%;
+        left: 92%;
     }
 }
