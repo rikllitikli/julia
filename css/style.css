@@ -573,7 +573,7 @@ body{
     position: absolute;
     top: 400px;
     left: -30px;
-    width: 30px;
+    width: 21.5px;
     animation-name: pchely_one;
     animation-duration: 8s;
     animation-delay: 12s;
@@ -605,7 +605,7 @@ body{
     position: absolute;
     top: 200px;
     left: -30px;
-    width: 30px;
+    width: 20px;
     animation-name: pchely_two;
     animation-duration: 8s;
     animation-delay: 16s;
